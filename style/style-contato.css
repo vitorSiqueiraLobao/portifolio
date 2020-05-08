@@ -1,0 +1,62 @@
+body{
+   font-family: 'Noto Sans JP', sans-serif;
+   background: url("../imgs/background-home-1.png");
+   background-size: cover;
+}
+
+.main{
+   margin-top: 150px;
+   margin-left: 40px;
+
+   animation-name: main;
+   animation-duration: 1s;
+}
+.main h1{
+   font-size: 50px;
+   color: rgb(239,60,92);
+}
+.main hr{
+   width: 30%;
+   margin-left: 0px;
+}
+.main h2{
+   margin-top: 20px;
+   font-size: 15px;
+   color: rgb(239,60,92)
+}
+.main p{
+   margin-top: 5px;
+   color: white;
+}
+i{
+   color: white;
+   margin-right: 20px;
+   transition: .2s;
+   animation-name: redes-sociais;
+   animation-duration: 2s;
+}
+i:hover{
+   color:rgb(239,60,92)
+}
+@keyframes redes-sociais{
+   0%{opacity: 0; transform: translate(-20px,0px);}
+   100%{opacity: 1; transform: translate(0px,0px);}
+}
+@keyframes main {
+   0%{opacity: 0; transform: translate(0px,20px);}
+   100%{opacity: 1;transform: translate(0px,0px);}
+}
+@media(max-width:1200px){
+   body{
+      background: rgb(22,22,22);
+   }
+   .main{
+      margin-top: 150px;
+      text-align: center;
+      margin-left: 0px;
+   }
+   .main hr{
+      width: 100%;
+   }
+
+}

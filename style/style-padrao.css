@@ -1,0 +1,100 @@
+body{
+   font-family: 'Noto Sans JP', sans-serif;
+}
+.navigation{
+   text-decoration: none;
+   position: fixed;
+   top: 0%;
+   text-align: left;
+   width: 100%;
+   padding: 10px;
+   color: rgb(22,22,22);
+   animation-name: navegacao;
+   animation-duration: 3s;
+}
+
+
+.sticky{
+   transition: .5s;
+   margin: 0;
+   padding: 10px;
+	background-color: rgba(0,0,0, 1);
+ }
+
+
+.navigation ul{
+   text-align: left;
+   list-style: none;
+}
+
+.navigation li{
+   color: white;
+   margin-left: 50px;
+   display: inline-block;
+   transition-duration: .5s;
+}
+.navigation li:hover{
+   
+   color:rgb(239,60,92);
+}
+.navigation li.threeline-icon {
+	display: none;
+}
+
+.navigation li.threeline-icon:hover {
+	color: #f27609;
+	cursor: pointer;
+}
+
+footer{
+   font-size: 10px;
+   text-align: center;
+   color:white;
+   position:fixed;
+   bottom: 0%;
+   width: 100%;
+   padding: 5px;
+   background-color: black;
+}
+
+@keyframes navegacao {
+	0% {opacity: 0;}
+	50% {opacity: 0;}
+	100% {opacity: 1}
+} 
+
+@media(max-width:1200px){
+
+   body{
+      background: rgb(22,22,22);
+   }
+
+   .navigation li{
+      display:none;
+   }
+   .navigation li.threeline-icon{
+      display: inline-block;
+   }
+   .menujs {
+      width: 100%;
+      height: auto;
+      text-align: center;
+      margin: 0px;
+   }
+   
+   .menujs ul {
+      height: auto;
+      text-align: center;
+      padding-right: 15%;
+      padding-left: 15%;
+
+   }
+   
+   .menujs li {
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      padding: 0;
+      margin: 0px;
+   }
+}

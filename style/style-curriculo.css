@@ -1,0 +1,159 @@
+body{
+   background-image:url("../imgs/background-curriculo-1.png");
+   background-size: cover;
+}
+.sobre-mim{
+   width: 75%;
+   margin-left: 210px;
+   text-indent: 1.5em;
+   padding: 10px;
+}
+.sobre-mim h2{
+   font-size: 40px;
+}
+#perfil{
+   margin-left: 170px;
+   display: inline;
+   font-size: 24px;
+   color: white;
+}
+#perfil div{
+   display: inline-block;
+}
+#perfil.dados{
+   height: 100%;
+   text-align: left;
+}
+#perfil h1{
+   color: #a5f525;
+   font-size: 40px;
+   margin-bottom: 30px;
+}
+#perfil h2{
+   margin: 10px 0 10px 0;
+}
+#perfil span{
+   color: rgb(239,60,92);
+}
+#icon{
+   margin-top: 150px;
+   margin-left: 50px;
+   
+}
+#icon img{
+   margin-right: 30px;
+   width: 350px;
+   border-radius: 24px;
+   box-shadow: 0px 0px 0px 2px rgb(239,60,92);
+
+   animation-name: profile-capa;
+   animation-duration: 1s;
+}
+#dados{
+    display: inline-block;
+}
+.linha-horizontal{
+   text-align: center;
+   width: 80%;
+   margin-top:20px;
+   margin-left: 10%;
+}
+.circulo-data{
+   margin-left: 50%;
+   color: white;
+}
+.circulo-data div{
+   display: inline-block;
+   vertical-align: top;
+}
+.circulo-data.data{
+   padding-bottom: 10px;
+
+}
+.circulo{
+   height: 20px;
+   width: 20px;
+   background: rgb(239,60,92);
+   border-radius: 100%;
+}
+
+.traco{
+   text-align: center;
+   margin: 5px 0 5px 50.48%;
+   height: 150px;
+   width: 3px;
+   background-color: #a5f525;
+   border-radius: 24px;
+}
+
+.legenda{
+   background-color: rgba(22,22,22,.8);
+   border-radius: 5px;
+   padding: 6px;
+   color: white;
+   float: left;
+}
+.legenda{
+   margin-top: 80px;
+}
+
+#esquerda{
+   margin-left: 41.5%;
+}
+
+#direita{
+   margin-left: 52%;
+}
+.interrogacao{
+   padding-top: 5px;
+   height: 30px;
+   border-radius: 100%;
+   text-align: center;
+   padding: 0%;
+   width: 30px;
+   border:1px solid #a5f525;
+   font-size: 24px;
+   color: white;
+   margin:20px 0px 30px 49.8%;
+   transition-duration: .5s;
+}
+.interrogacao p{
+   margin-top: 2px;
+}
+.interrogacao:hover{
+   width: 50px;
+   height: 50px;
+   color: rgb(239,60,92);
+   margin:0px 0px 50px 49.2%;
+}
+.interrogacao p:hover{
+   margin-top: 10px;
+   transition-duration: .5s;
+}
+@media(max-width:1200px){
+   body{
+      background: rgb(22,22,22);
+   }
+   .sobre-mim{
+      text-align: left;
+      margin-left: 10%;
+   }
+   #perfil{
+      text-align: center;
+   }
+
+   #perfil div{
+      display: block;
+   }
+   .curriculo{
+      display: none;
+   }
+   #icon img{
+      border-radius: 100%;
+      margin-bottom: 25px;
+   }
+}
+@keyframes profile-capa {
+	0% {opacity: 0; transform: translate(0px,20px)}
+	100% {opacity: 1; transform: translate(0px,0px)}
+}
